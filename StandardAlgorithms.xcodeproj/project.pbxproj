@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CCAA911A291678AD00A00D3D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAA9119291678AD00A00D3D /* main.swift */; };
+		CCBAF2AB291BB67600D1BECF /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAF2AA291BB67600D1BECF /* Sorting.swift */; };
+		CCBAF2AD291BB72300D1BECF /* SortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAF2A8291BB51100D1BECF /* SortingTest.swift */; };
+		CCBAF2AE291BB73000D1BECF /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAF2AA291BB67600D1BECF /* Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,20 @@
 /* Begin PBXFileReference section */
 		CCAA9116291678AD00A00D3D /* StandardAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAA9119291678AD00A00D3D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CCBAF2A1291BB2D300D1BECF /* StandardAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBAF2A8291BB51100D1BECF /* SortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingTest.swift; sourceTree = "<group>"; };
+		CCBAF2AA291BB67600D1BECF /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CCAA9113291678AD00A00D3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBAF29E291BB2D300D1BECF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				CCAA9118291678AD00A00D3D /* StandardAlgorithms */,
+				CCBAF2A2291BB2D300D1BECF /* StandardAlgorithmsTests */,
 				CCAA9117291678AD00A00D3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				CCAA9116291678AD00A00D3D /* StandardAlgorithms */,
+				CCBAF2A1291BB2D300D1BECF /* StandardAlgorithmsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +73,17 @@
 			isa = PBXGroup;
 			children = (
 				CCAA9119291678AD00A00D3D /* main.swift */,
+				CCBAF2AA291BB67600D1BECF /* Sorting.swift */,
 			);
 			path = StandardAlgorithms;
+			sourceTree = "<group>";
+		};
+		CCBAF2A2291BB2D300D1BECF /* StandardAlgorithmsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCBAF2A8291BB51100D1BECF /* SortingTest.swift */,
+			);
+			path = StandardAlgorithmsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +106,23 @@
 			productReference = CCAA9116291678AD00A00D3D /* StandardAlgorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		CCBAF2A0291BB2D300D1BECF /* StandardAlgorithmsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCBAF2A7291BB2D300D1BECF /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTests" */;
+			buildPhases = (
+				CCBAF29D291BB2D300D1BECF /* Sources */,
+				CCBAF29E291BB2D300D1BECF /* Frameworks */,
+				CCBAF29F291BB2D300D1BECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StandardAlgorithmsTests;
+			productName = StandardAlgorithmsTests;
+			productReference = CCBAF2A1291BB2D300D1BECF /* StandardAlgorithmsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +135,10 @@
 				TargetAttributes = {
 					CCAA9115291678AD00A00D3D = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					CCBAF2A0291BB2D300D1BECF = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -111,16 +156,37 @@
 			projectRoot = "";
 			targets = (
 				CCAA9115291678AD00A00D3D /* StandardAlgorithms */,
+				CCBAF2A0291BB2D300D1BECF /* StandardAlgorithmsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCBAF29F291BB2D300D1BECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCAA9112291678AD00A00D3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBAF2AB291BB67600D1BECF /* Sorting.swift in Sources */,
 				CCAA911A291678AD00A00D3D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBAF29D291BB2D300D1BECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBAF2AE291BB73000D1BECF /* Sorting.swift in Sources */,
+				CCBAF2AD291BB72300D1BECF /* SortingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +326,47 @@
 			};
 			name = Release;
 		};
+		CCBAF2A5291BB2D300D1BECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verekerl.StandardAlgorithmsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CCBAF2A6291BB2D300D1BECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.verekerl.StandardAlgorithmsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -277,6 +384,15 @@
 			buildConfigurations = (
 				CCAA911E291678AD00A00D3D /* Debug */,
 				CCAA911F291678AD00A00D3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCBAF2A7291BB2D300D1BECF /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBAF2A5291BB2D300D1BECF /* Debug */,
+				CCBAF2A6291BB2D300D1BECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
