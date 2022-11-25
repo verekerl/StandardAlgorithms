@@ -49,10 +49,10 @@ class SearchingTest: XCTestCase {
     func testLinearSearchWithUnsortedArrayOfIntegersReturnsSortedArray() {
         //arrange - test setup
         let unsortedArray = [3,1,10,15,4]
-        let expected = 3
-        let sorting = Sorting()
+        let expected = true
+        let searching = Searching()
         //act - perform the action we want to test
-        let sortedArray = sorting.linearSearch(data: unsortedArray)
+        let sortedArray = searching.linearSearch(data: unsortedArray,target: 3)
         //assert - check the action behaved as we expected
         XCTAssertEqual(sortedArray,expected)
     }

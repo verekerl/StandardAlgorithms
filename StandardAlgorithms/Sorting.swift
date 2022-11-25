@@ -82,15 +82,20 @@ class Sorting {
 
 class Searching {
     
-    func linearSearch(data: [Int]) -> [Int] {
-        var number = 0
-        let anyArray = data
-        for i in data {
-            if data[i] == anyArray {
-                number = data[i]
+    func linearSearch(data: [Int],target: Int) -> Bool {
+        for item in data {
+            if item == target {
+                return true
             }
         }
-        return number
+        return false
+    }
+    
+    func binarySearch(data: [Int],target: Int) -> Bool {
+        let array = data
+        var low = 0
+        var high = array.count - 1
+        var midpoint = (high + low) / 2
     }
 
 }
