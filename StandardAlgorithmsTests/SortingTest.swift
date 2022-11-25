@@ -19,5 +19,42 @@ class SortingTest: XCTestCase {
         //assert - check the action behaved as we expected
         XCTAssertEqual(sortedArray,expected)
     }
+    
+    func testMergeSortWithUnsortedArrayOfIntegersReturnsSortedArray() {
+        //arrange - test setup
+        let unsortedArray = [3,1,10,15,4]
+        let expected = [1,3,4,10,15]
+        let sorting = Sorting()
+        //act - perform the action we want to test
+        let sortedArray = sorting.mergeSort(data: unsortedArray)
+        //assert - check the action behaved as we expected
+        XCTAssertEqual(sortedArray,expected)
+    }
+    
+    func testInsertionSortWithUnsortedArrayOfIntegersReturnsSortedArray() {
+        //arrange - test setup
+        let unsortedArray = [3,1,10,15,4]
+        let expected = [1,3,4,10,15]
+        let sorting = Sorting()
+        //act - perform the action we want to test
+        let sortedArray = sorting.insertionSort(data: unsortedArray)
+        //assert - check the action behaved as we expected
+        XCTAssertEqual(sortedArray,expected)
+    }
+    
+}
 
+class SearchingTest: XCTestCase {
+    
+    func testLinearSearchWithUnsortedArrayOfIntegersReturnsSortedArray() {
+        //arrange - test setup
+        let unsortedArray = [3,1,10,15,4]
+        let expected = 3
+        let sorting = Sorting()
+        //act - perform the action we want to test
+        let sortedArray = sorting.linearSearch(data: unsortedArray)
+        //assert - check the action behaved as we expected
+        XCTAssertEqual(sortedArray,expected)
+    }
+    
 }
